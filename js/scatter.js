@@ -1,6 +1,6 @@
 var svgHeight = 600,
     svgWidth = 960,
-    margin = {top: 20, right: 20, bottom: 40, left: 40},
+    margin = {top: 40, right: 20, bottom: 40, left: 40},
     height = svgHeight - margin.top - margin.bottom,
     width = svgWidth - margin.left - margin.right;
 
@@ -28,6 +28,14 @@ var svg = d3.select('.chart')
 svg.append('g')
     .attr('class','xaxis')
     .attr('transform','translate(0,' + height + ')');
+
+d3.select('.chart').insert('text')
+    .attr('class','title')
+    .attr('x',0)
+    .attr('y', margin.top/2)
+    .attr("text-anchor", "left")  
+    .style("font-size", "16px") 
+    .text('Title of the chart');
 
 svg.append('g')
     .attr('class','yaxis');
