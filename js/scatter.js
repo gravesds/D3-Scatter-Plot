@@ -61,7 +61,7 @@ var updateData = function(data) {
             .attr('class', 'dot')
             .attr('cx', xMap)
             .attr('cy', yMap)
-            .attr('r', 5)
+           // .attr('r', 5)
             .attr('fill', cMap)
             .attr('species', cValue);
 
@@ -70,7 +70,7 @@ var updateData = function(data) {
             .attr('class', 'dot')
             .attr('cx', xMap)
             .attr('cy', yMap)
-            .attr('r',5)
+            //.attr('r',5)
             .attr('fill', cMap)
             .attr('species', cValue);
     
